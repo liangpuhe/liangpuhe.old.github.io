@@ -310,7 +310,9 @@ img {
 .img-responsive {
   display: block;
   max-width: 100%;
-  height: auto;
+}
+.img-padding-left-50 {
+	padding-left: 50px;
 }
 .img-rounded {
   border-radius: 6px;
@@ -329,6 +331,13 @@ img {
 }
 .img-circle {
   border-radius: 50%;
+}
+.img-background {
+	background-image: url('../img/');
+	margin-right: 0%;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 hr {
   margin-top: 20px;
