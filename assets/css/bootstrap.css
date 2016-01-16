@@ -309,7 +309,7 @@ img {
 }
 .img-responsive {
   display: block;
-  max-width: 100%;
+  max-width: 100%
 }
 .img-padding-left-50 {
   padding-left: 50px;
@@ -338,6 +338,11 @@ img {
 	background-size: 100% auto;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.img-storyboard {
+    margin-left: 20%;
+    width: 60%;
+    height: auto;
 }
 hr {
   margin-top: 20px;
