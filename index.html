@@ -38,7 +38,33 @@
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-
+    
+    <style>
+        #loading{
+            width:150px;
+            height:25px;
+            border:1px solid #000;
+            border-top:none;
+            background-color:#FFC;
+            
+            position:absolute;
+            top:0px;
+            left:50%;
+            margin-left:-75px;
+            
+            text-align:center;
+            line-height:25px;
+            font-size:12px;
+            font-weight:bold;
+            color:#F00;
+        }
+    </style>
+    <div id="loading">…loading…</div>
+    <script>
+        $(function(){
+          $('#loading').fadeOut();
+          })
+    </script>
 
 	<div id="navbar-main">
 		<!-- Fixed navbar -->
@@ -97,7 +123,7 @@
 			<div class="col-lg-4 callout">
 				<span class="icon icon-stack"></span>
 				<h2>Passion</h2>
-				<p>A life lover learn and work unceasingly for passion. I am
+				<p>A life lover learns and works unceasingly for passion. I am
 					always ready to service.</p>
 			</div>
 			<!-- col-lg-4 -->
@@ -153,7 +179,7 @@
 			<h1 class="centered">Research Findings</h1>
 			<hr>
 			<br>
-			<div class="col-lg-4 callout">
+			<div class="col-lg-4 callout img-background-14">
 				<h2 class="centered">User interview</h2>
 				<ul>
 					<li>Desires: Break boundary of real-life social circle.</li>
@@ -162,17 +188,18 @@
 			</div>
 			<!-- col-lg-4 -->
 
-			<div class="col-lg-4 callout">
+			<div class="col-lg-4 callout img-background-3">
 
 				<h2 class="centered">Entrepreneur interview</h2>
 				<ul>
 					<li>Hard to establish human network in the beginning</li>
 					<li>Hard to keep users.</li>
+                    <li>Advertisement income selection.</li>
 				</ul>
 			</div>
 			<!-- col-lg-4 -->
 
-			<div class="col-lg-4 callout">
+			<div class="col-lg-4 callout img-background-2">
 
 				<h2 class="centered">Competitor comparison</h2>
 				<ul>
@@ -663,7 +690,7 @@
 	<!-- ==== SECTION DIVIDER4 ==== -->
 	<section class="section-divider textdivider divider4">
 		<div class="container">
-			<h1>Pages Are Under Development.</h1>
+			<h1>More Pages Are under Development.</h1>
 			<hr>
 <!--			<p>There’s more to design than meets the eye. It’s when it meets-->
 <!--				the heart that design creates a meaningful, lasting connection with-->
