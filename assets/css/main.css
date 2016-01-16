@@ -623,7 +623,10 @@ li {
 	padding-left: 30px;
 	background: #f2f2f2;
 }
-
+.blog-white {
+    padding-top: 30px;
+    padding-left: 30px;
+}
 .blog-row {
 	margin-bottom: 40px;
 }
