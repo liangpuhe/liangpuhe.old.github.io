@@ -29,7 +29,12 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-
+<script>
+    function distroyPreloader()
+    {
+        var objLoading = document.getElementById("preloader").style.display = "none";
+    }
+</script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -37,35 +42,12 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-    
-    <style>
-        #loading{
-            width:150px;
-            height:25px;
-            border:1px solid #000;
-            border-top:none;
-            background-color:#FFC;
-            
-            position:absolute;
-            top:0px;
-            left:50%;
-            margin-left:-75px;
-            
-            text-align:center;
-            line-height:25px;
-            font-size:12px;
-            font-weight:bold;
-            color:#F00;
-        }
-    </style>
-    <div id="loading">…loading…</div>
-    <script>
-        $(function(){
-          $('#loading').fadeOut();
-          })
-    </script>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="distroyPreloader()">
 
+    <div id="preloader" class="sk-chasing-dots">
+        <div class="sk-child sk-dot1"></div>
+        <div class="sk-child sk-dot2"></div>
+    </div>
 	<div id="navbar-main">
 		<!-- Fixed navbar -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -106,6 +88,7 @@
 			</h1>
 			<p>My name is Puhe Liang.</p>
 			<p>I will be a UX designer.</p>
+            
 		</header>
 	</div>
 	<!-- /headerwrap -->
