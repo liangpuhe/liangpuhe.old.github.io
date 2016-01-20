@@ -33,6 +33,7 @@
     function distroyPreloader()
     {
         var objLoading = document.getElementById("preloader").style.display = "none";
+        var mainLoading = document.getElementById("main-page").style.display = "";
     }
 </script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,12 +44,13 @@
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="distroyPreloader()">
-    <div id="preloader" class="float-layer">
+    <div id="preloader">
     <div class="sk-chasing-dots">
         <div class="sk-child sk-dot1"></div>
         <div class="sk-child sk-dot2"></div>
     </div>
     </div>
+    <div id="main-page" display="none">
 	<div id="navbar-main">
 		<!-- Fixed navbar -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -693,6 +695,7 @@
 		<!-- row -->
 
 	</div>
+    </div>
 	<!-- container -->
 
 <!-- 	<div id="footerwrap">
