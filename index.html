@@ -32,9 +32,18 @@
                                                      <script src="assets/js/html5shiv.js"></script>
                                                      <script src="assets/js/respond.min.js"></script>
                                                      <![endif]-->
+                                                    
+                                <script type="text/javascript">
+                                    $(window).load(function(){
+                                            var objLoading = document.getElementById("preloader").style.display = "none";
+                                            var mainLoading = document.getElementById("main-page").style.display = "";
+                                                   });
+                                                    
+                                </script>
+
     </head>
     
-    <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="distroyPreloader()">
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
         <div id="preloader" style="vertical-align:middle">
             <div class="sk-chasing-dots">
                 <div class="sk-child sk-dot1"></div>
@@ -713,13 +722,13 @@
             <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
             <script type="text/javascript" src="assets/js/jquery-func.js"></script>
 
-            <script type="text/javascript">
-                function distroyPreloader()
-                {
-                    var objLoading = document.getElementById("preloader").style.display = "none";
-                    var mainLoading = document.getElementById("main-page").style.display = "";
-                }
-            
-                </script>
+<!--            <script type="text/javascript">-->
+<!--                function distroyPreloader()-->
+<!--                {-->
+<!--                    var objLoading = document.getElementById("preloader").style.display = "none";-->
+<!--                    var mainLoading = document.getElementById("main-page").style.display = "";-->
+<!--                }-->
+<!--            -->
+<!--                </script>-->
     </body>
 </html>
