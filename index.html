@@ -37,13 +37,14 @@
                                 
                                     
                                 </script>
-                                <script type="text/javascript">
-                                    if($(window).width()<=700)
-                                        {
+                                <script>
+                                    $(document).ready(function(){
+                                        if($(window).width()<=700)
+                                                     {
                                                    var objLoading = document.getElementById("preloader").style.display = "none";
                                                    var mainLoading = document.getElementById("main-page").style.display = "";
-                                        }
-                                
+                                                     }
+                                        });
                                 </script>
 
     </head>
