@@ -38,10 +38,7 @@
                                     
                                 </script>
                                 <script type="text/javascript">
-                                    window.mobileCheck = function(){
-                                        return $(window).width()<=700;
-                                    }
-                                    if(window.mobileCheck())
+                                    if($(window).width()<=700)
                                         {
                                                    var objLoading = document.getElementById("preloader").style.display = "none";
                                                    var mainLoading = document.getElementById("main-page").style.display = "";
