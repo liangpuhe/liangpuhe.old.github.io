@@ -25,20 +25,27 @@
                                 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700 ' rel='stylesheet' type='text/css'>
                                 <script src="assets/js/jquery.min.js"></script>
                                 <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-                                                    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                                                    <!--[if lt IE 9]>
-                                                     <script src="assets/js/html5shiv.js"></script>
-                                                     <script src="assets/js/respond.min.js"></script>
-                                                     <![endif]-->
                                                     
                                 <script type="text/javascript">
                                     function distroyPreloader()
                                     {
                                             var objLoading = document.getElementById("preloader").style.display = "none";
                                             var mainLoading = document.getElementById("main-page").style.display = "";
+                                            
                                     }
                                 
+                                
                                     
+                                </script>
+                                <script type="text/javascript">
+                                    if(window.mobileCheck())
+                                        {
+                                                   var objLoading = document.getElementById("preloader").style.display = "none";
+                                                   var mainLoading = document.getElementById("main-page").style.display = "";
+                                        }
+                                    window.mobileCheck = function(){
+                                        return $(window).width()<=700;
+                                    }
                                 </script>
 
     </head>
