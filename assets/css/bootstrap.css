@@ -2073,8 +2073,8 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  background-color: #f25749;
+  border-color: #f25749;
 }
 .btn-default:active,
 .btn-default.active,
