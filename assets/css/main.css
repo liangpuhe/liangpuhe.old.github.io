@@ -289,7 +289,7 @@ ul {
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
-	background-attachment: relative;
+	background-attachment: fixed;
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
@@ -406,7 +406,7 @@ ul {
     -o-background-size: cover;
     background-size: cover;
 
-    background-attachment: relative;
+    background-attachment: fixed;
     
     text-align: center;
 }
