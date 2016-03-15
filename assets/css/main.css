@@ -95,12 +95,18 @@ body {
 }
 
 .col-md-4 {
-	padding-bottom: 20px;
+	padding-bottom: 280px;
 }
 
 .row {
 margin-right: 0px;
 margin-left: -15px;
+}
+
+
+#details .grid {
+	bottom: 0px;
+	position: absolute;
 }
 
 .modal-header {
