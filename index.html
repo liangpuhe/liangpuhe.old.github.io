@@ -29,12 +29,13 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/skrollr.js"></script>
+        <script src="assets/js/imagesloaded.js"></script>
         <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
         <script type="text/javascript">
-            function distroyPreloader() {
-                var objLoading = document.getElementById("preloader").style.display = "none";
-                var mainLoading = document.getElementById("main-page").style.display = "";
-            }
+		function destroyPreloader() {
+        	var objLoading = document.getElementById("preloader").style.display = "none";
+			var mainLoading = document.getElementById("main-page").style.display = "";
+    	}
         </script>
         <script>
             (function(i, s, o, g, r, a, m) {
@@ -61,7 +62,7 @@
 
     </head>
 
-    <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="distroyPreloader()">
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="destroyPreloader()">
         <div id="preloader" style="vertical-align:middle">
             <div class="sk-chasing-dots">
                 <div class="sk-child sk-dot1"></div>
@@ -100,10 +101,11 @@
 
 
             <!-- ==== HEADERWRAP ==== -->
-            <div id="headerwrap">
-            <div id="home" name="home" data-center="background-position: 50% 0px;"
+            <section id="slide-1" class="homeSlide"> 
+	           
+            <div id="headerwrap" name="home" data-center="background-position: 50% 0px;"
 					data-top-bottom="background-position: 50% -100px;"
-					data-anchor-target="#headerwrap">
+					data-anchor-target="#slide-1">
                 <header class="clearfix">
                     <h1>
                         <span class="icon flaticon-gambling39 fadeInDown animated"></span>
@@ -113,7 +115,8 @@
 
                 </header>
             </div>
-            </div>
+            </section>
+            
             <!-- /headerwrap -->
 
             <!-- ==== GREYWRAP ==== -->
@@ -561,7 +564,7 @@
                  ================================================== -->
                 <!-- Placed at the end of the document so the pages load faster -->
             </div>
-
+		</div>
             <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
             <script type="text/javascript" src="assets/js/retina.js"></script>
             <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
