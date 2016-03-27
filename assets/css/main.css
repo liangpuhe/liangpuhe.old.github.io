@@ -360,6 +360,12 @@ ul {
 	margin-bottom: 10px;
 }
 
+.navbar-download .icon {
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+
 #footerwrap {
 	background: #2b2b2b;
 	margin-top: 0px;
