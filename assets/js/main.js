@@ -22,13 +22,6 @@ $(function() {
 //         destroyPreloader();
     });
 
-    function destroyPreloader() {
-        var objLoading = document.getElementById("preloader").style.display = "none";
-        var mainLoading = document.getElementById("main-page").style.display = "";
-    }
-
-
-
     function adjustWindow() {
 
         // Init Skrollr
