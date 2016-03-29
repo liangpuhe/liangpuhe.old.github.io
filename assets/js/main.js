@@ -1,3 +1,7 @@
+function destroyPreloader() {
+    var objLoading = document.getElementById("preloader").style.display = "none";
+    var mainLoading = document.getElementById("main-page").style.display = "";
+}
 
 $(function() {
 
@@ -15,11 +19,10 @@ $(function() {
 
 
 
-    //FadeIn all sections   
+    //FadeIn all sections
     $body.imagesLoaded(function() {
-
-        adjustWindow();
-//         destroyPreloader();
+        adjustWindow();         
+        destroyPreloader();
     });
 
     function adjustWindow() {

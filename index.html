@@ -29,7 +29,7 @@
 
     </head>
 
-    <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="destroyPreloader()">
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
         <div id="preloader" style="vertical-align:middle">
             <div class="sk-chasing-dots">
                 <div class="sk-child sk-dot1"></div>
@@ -588,12 +588,6 @@
         <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
         <script src="assets/js/main.js"></script>
 
-            <script type="text/javascript">
-            function destroyPreloader() {
-                var objLoading = document.getElementById("preloader").style.display = "none";
-                var mainLoading = document.getElementById("main-page").style.display = "";
-            }
-            </script>
             <script>
                 (function(i, s, o, g, r, a, m) {
                     i['GoogleAnalyticsObject'] = r;
